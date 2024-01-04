@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng build --base-href=/software-engineer-vinokurov/ && npx angular-cli-ghpages --dir=dist/software-engineer-vinokurov/browser"
+    "deploy": "npx angular-cli-ghpages --dir=dist/software-engineer-vinokurov/browser",
+    "build-n-deploy": "ng build --base-href=/software-engineer-vinokurov/ && npm run deploy"
   },
   "private": true,
   "dependencies": {
